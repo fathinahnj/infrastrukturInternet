@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="container-left">
+          <h1 #title>Mari belajar infrastruktur internet!</h1>
+          <div class="grid-container">
+            <div class="box" id="box1">Definisi & Cara Kerja Internet</div>
+            <div class="box" id="box2">Definisi & Cara Kerja HTTP & HTTPS</div>
+            <div class="box" id="box3">Definisi & Cara Kerja Nama Domain</div>
+            <div class="box" id="box4">Definisi & Cara Kerja Hosting</div>
+            <div class="box" id="box5">Definisi & Cara Kerja Domain Name System</div>
+            <div class="box" id="box6">Definisi & Cara Kerja Browser</div>
+           </div>
+        </div>
+        <div class="container-right">
+          <img src="computer-tv-screen-svgrepo-com.svg" alt="Gambar Internet">
+        </div>
+      </div>
+    </section>
+
+    <section id="internet">
+      <div class="container" id="container-gap">
+        <div class="container-left">
+          <h1>Bagaimana cara Internet bekerja?</h1>
+          <p>Internet adalah jaringan global yang menghubungkan jutaan perangkat di seluruh dunia.</p>
+        </div>
+        <div class="container-right">
+          <div>
+            <p>Internet bekerja dengan menghubungkan perangkat di seluruh dunia melalui jaringan yang saling terhubung. Data dikirim dalam bentuk paket-paket kecil menggunakan protokol TCP/IP. Setiap perangkat memiliki alamat IP unik untuk mengidentifikasi tujuan pengiriman data. Saat pengguna mengakses suatu layanan online, perangkat mengirimkan permintaan ke server, yang kemudian mengirimkan data yang diminta kembali ke perangkat. Domain Name System (DNS) berperan dalam menerjemahkan nama domain menjadi alamat IP sehingga perangkat bisa menemukan server yang tepat.</p>
+            <p class="small-text">Sumber: Cloudfare</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="http">
+      <div class="title">
+        <h1>HTTP dan HTTPS</h1>
+      </div>
+      <div class="grid-container">
+          <div class="box">
+            <div class="box-top">
+              <h2>Apa itu HTTP?</h2>
+            </div>
+            <div class="box-center">
+              <p>Hypertext transfer protocol (HTTP) adalah sebuah protokol atau seperangkat aturan komunikasi untuk komunikasi klien-server. Saat Anda mengunjungi situs web, peramban Anda mengirimkan permintaan HTTP ke server web, yang merespons dengan HTTP.</p></p>
+              <p class="small-text">Sumber : https://aws.amazon.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-top">
+              <h2>Apa itu HTTPS?</h2>
+            </div>
+            <div class="box-center">
+              <p>Hypertext Transfer Protocol Secure (HTTPS) adalah versi atau perpanjangan HTTP yang lebih aman. Di HTTPS, peramban dan server akan membuat koneksi yang aman dan terenkripsi sebelum mentransfer data.</p>
+              <p class="small-text">Sumber : https://aws.amazon.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-top">
+              <h2>Bagaimana cara kerja HTTP?</h2>
+            </div>
+            <div class="box-center"  id="http-work">
+              <strong>Permintaan Klien:</strong> Browser mengirimkan permintaan HTTP ke server (misalnya, untuk mengakses halaman web). <br>
+              <strong>Pengiriman Data:</strong> Permintaan dan data dikirim dalam format teks biasa tanpa enkripsi. <br>
+              <strong>Respons Server:</strong> Server merespons dengan mengirimkan data yang diminta (seperti halaman HTML) kembali ke browser. <br>
+              <strong>Transfer Data:</strong> Data dipindahkan dari server ke klien melalui jaringan, namun tidak ada jaminan keamanan. <br>
+            </div>
+          </div>
+        <div class="box">
+          <div class="box-top">
+            <h2>Bagaimana cara kerja HTTPS?</h2>
+          </div>
+          <div class="box-center" id="http-work">
+            <strong>Koneksi Aman:</strong> Browser mengirimkan permintaan ke server HTTPS untuk membangun koneksi yang aman. <br>
+            <strong>Proses SSL/TLS Handshake:</strong> Browser dan server bertukar sertifikat enkripsi (SSL/TLS) untuk mengenkripsi komunikasi. <br>
+            <strong>Enkripsi Data:</strong> Permintaan dan respons dienkripsi sehingga hanya pengirim dan penerima yang dapat membacanya. <br>
+            <strong>Transfer Aman:</strong> Data dipindahkan melalui jaringan dengan enkripsi, melindungi dari penyadapan dan manipulasi. <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="domain">
+      <div class="container" id="container-gap">
+        <div class="container-left">
+          <h1>Bagaimana cara nama domain bekerja?</h1>
+          <p>Nama domain adalah alamat unik yang digunakan untuk mengidentifikasi situs web di internet.</p>
+        </div>
+        <div class="container-right">
+          <div>
+            <p>Nama domain bekerja sebagai alamat yang mudah diingat untuk mengakses situs web di internet, menggantikan alamat IP yang kompleks. Ketika pengguna mengetik nama domain di browser, permintaan tersebut dikirim ke server DNS (Domain Name System), yang bertugas menerjemahkan nama domain menjadi alamat IP yang sesuai. Server DNS kemudian mencari alamat IP yang terkait dengan nama domain tersebut, dan mengembalikannya ke browser. Setelah mendapatkan alamat IP, browser dapat terhubung ke server yang menyimpan situs web tersebut, memungkinkan pengguna untuk mengakses konten yang diinginkan dengan mudah. Proses ini terjadi dalam hitungan detik, sehingga pengguna tidak perlu mengingat atau memasukkan alamat IP secara manual.</p>
+            <p class="small-text">Sumber: Techtarget</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hosting">
+      <div class="container" id="container-gap">
+        <div class="container-left">
+          <div>
+            <p>Hosting bekerja dengan menyediakan ruang di server untuk menyimpan file dan data sebuah situs web, sehingga situs tersebut dapat diakses secara online. Ketika pengguna mengetik nama domain di browser, permintaan diarahkan ke server hosting tempat file situs web disimpan. Server kemudian mengirimkan data situs tersebut ke browser, yang menampilkannya kepada pengguna. Hosting memungkinkan situs web tetap tersedia 24/7 di internet.</p>
+            <p class="small-text">Sumber: Squarespace Help Center</p>
+          </div>
+        </div>
+        <div class="container-right">
+          <div>
+            <h1>Bagaimana cara hosting bekerja?</h1>
+            <p>Hosting adalah layanan yang menyediakan tempat di server sehingga situs tersebut dapat diakses secara online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dns">
+      <div>
+        <div id="dns-title">
+          <h1>Bagaimana cara DNS bekerja?</h1>
+          <p>Domain Name System adalah sistem yang berfungsi seperti buku alamat internet.</p>
+          <p class="small-text">Sumber: Amazon Web Services</p>
+        </div>
+        <div class="grid-container">
+          <div class="box">Pengguna mengetik URL di browser</div>
+          <div class="box">Permintaan dikirim ke DNS resolver</div>
+          <div class="box">Resolver memeriksa DNS yang sesuai di cache lokal</div>
+          <div class="box">Jika tidak ditemukan, permintaan diteruskan ke server DNS root</div>
+          <div class="box">Server DNS root mengarahkan permintaan ke server DNS TLD</div>
+          <div class="box">TLD server mengarahkan permintaan ke server DNS otoritatif untuk domain tersebut</div>
+          <div class="box">Server otoritatif mengembalikan alamat IP dari domain yang diminta</div>
+          <div class="box">Browser menggunakan alamat IP untuk menghubungi server web dan menampilkan situs</div>
+        </div>  
+      </div>
+    </section>
+
+    <section id="browser">
+      <div class="container" id="container-gap">
+        <div class="container-left">
+          <h1>Bagaimana cara browser bekerja?</h1>
+          <p>Browser adalah perangkat lunak yang digunakan untuk mengakses, menampilkan, dan berinteraksi dengan konten di internet melalui protokol web seperti HTTP atau HTTPS.</p>
+          <p class="small-text">Sumber: BrowserStack</p>
+        </div>
+        <div class="container-right">
+          <p>Browser bekerja dengan mengirimkan permintaan HTTP atau HTTPS ke server setelah pengguna memasukkan URL atau mengklik tautan. Permintaan ini dikirim ke server yang menyimpan situs web yang diminta. Server kemudian merespons dengan mengirimkan file berupa HTML, CSS, JavaScript, dan konten lain yang diperlukan. Browser menerima file tersebut, memprosesnya, dan menampilkan halaman web kepada pengguna. HTML menentukan struktur konten, CSS mengatur tampilannya, dan JavaScript mengelola interaksi dinamis di halaman. Selain itu, browser juga mengelola caching, cookies, dan keamanan untuk memastikan pengalaman berselancar yang lancar dan aman.</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("box1").addEventListener("click", function() {
+        document.getElementById("internet").scrollIntoView({ behavior: "smooth" });
+      });
+      
+      document.getElementById("box2").addEventListener("click", function() {
+        document.getElementById("http").scrollIntoView({ behavior: "smooth" });
+      });      
+
+      document.getElementById("box3").addEventListener("click", function() {
+        document.getElementById("domain").scrollIntoView({ behavior: "smooth" });
+      });
+      
+      document.getElementById("box4").addEventListener("click", function() {
+        document.getElementById("hosting").scrollIntoView({ behavior: "smooth" });
+      });
+
+      document.getElementById("box5").addEventListener("click", function() {
+        document.getElementById("dns").scrollIntoView({ behavior: "smooth" });
+      });
+      
+      document.getElementById("box6").addEventListener("click", function() {
+        document.getElementById("browser").scrollIntoView({ behavior: "smooth" });
+      });
+      
+    </script>
+  </body>
+</html>
